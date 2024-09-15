@@ -1,0 +1,134 @@
+.aboutme{
+    margin-top:2rem;
+    padding: 1rem 1rem;
+    width: 100vw;
+}
+
+.aboutme .summary,
+.aboutme .education,
+.aboutme .skills {
+    margin-bottom: 3rem;
+}
+
+.aboutme h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #008080;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.aboutme p{
+    background-color: rgba(0,128,128,0.35);
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+
+.aboutme .education table,
+.aboutme .skills table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0,128,128,0.35);
+    border-radius: 5px;
+}
+
+.aboutme .education td {
+    text-align: left;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.aboutme .education table .education-one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutme .skills table {
+    width: 100%;
+}
+
+.aboutme .skills-topics {
+    font-weight: 550;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    white-space: nowrap;
+}
+
+.aboutme .skills-points {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+}
+
+.aboutme .skills td{
+    border-bottom: 1px solid #183740;
+}
+
+.aboutme .skills tr:last-child td{
+    border-bottom: none;
+}
+
+.aboutme td {
+    padding: 0.25rem 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .aboutme {
+        padding: 1.5rem;
+    }
+
+    .aboutme h1 {
+        font-size: 2.25rem;
+    }
+
+    .aboutme p,
+    .aboutme .education th,
+    .aboutme .education td,
+    .aboutme .skills-points,
+    .aboutme .skills-topics {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutme h1 {
+        font-size: 2rem;
+    }
+
+    .aboutme p,
+    .aboutme .education th,
+    .aboutme .education td,
+    .aboutme .skills-points,
+    .aboutme .skills-topics {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutme h1 {
+        font-size: 1.75rem;
+    }
+
+    .aboutme p,
+    .aboutme .education th,
+    .aboutme .education td,
+    .aboutme .skills-points,
+    .aboutme .skills-topics {
+        font-size: 0.9rem;
+    }
+
+    .aboutme .skills-points {
+        display: block;
+        padding: 0.25rem 0;
+    }
+
+    .aboutme .skills-topics {
+        padding-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
