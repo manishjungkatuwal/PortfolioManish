@@ -10,6 +10,8 @@ body{
     background-color: rgb(246, 246, 229);
     color: #183740;
     overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 html{
