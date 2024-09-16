@@ -1,7 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './aboutme.css'
+import CloudPractioner from "../../assets/certificates/cloudprac.png"
+import FrontEnd from "../../assets/certificates/front-end.png"
+import HTMLCSS from "../../assets/certificates/htmlcss.png"
+import JS from "../../assets/certificates/javascript.png"
+import ReactCert from "../../assets/certificates/react.png"
+import VC from "../../assets/certificates/versioncontrol.png"
+import {ArrowBigLeft, ArrowBigRight} from "lucide-react"
+
+const images = [CloudPractioner, ReactCert, FrontEnd, HTMLCSS, JS, VC];
 
 const aboutme = () => {
+
+    let [imageIndex, setImageIndex] = useState(0);
+
+    const handleLeftArrowClick = () => {
+        setImageIndex(index => {
+            if(index ===0) return images.length-1
+            return index-1
+        })
+    };
+      
+    const handleRightArrowClick = () => {
+        setImageIndex(index => {
+            if(index === images.length-1) return 0
+            return index+1
+        })
+    };
+
+
+
   return (
     <div className='aboutme' id='aboutme'>
         <div className="summary" >
@@ -87,8 +115,17 @@ const aboutme = () => {
                 </tbody>
             </table>
         </div>
+        <h1>My Certificates</h1>
         <div className="certification">
-            
+            <div className="certification-slide" 
+            style={{width: "100%", height: "100%", display: "flex", overflow: "hidden", margin: "0 auto"}}>
+                {images.map(url => (
+                    <img key={url} src={url} 
+                    style={{ translate: `${-100*imageIndex}%`}}/>
+                ))}
+            </div>
+            <button onClick={handleLeftArrowClick} className='certification-btn-l'><ArrowBigLeft/></button>
+            <button onClick={handleRightArrowClick} className='certification-btn-r'><ArrowBigRight/></button>
         </div>
     </div>
   )

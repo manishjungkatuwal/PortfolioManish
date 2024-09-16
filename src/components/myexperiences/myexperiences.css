@@ -1,14 +1,16 @@
-/* myexperiences.css */
-
 .myexperiences {
     margin-top: 0rem;
     padding: 1rem;
     width: 100vw;
 }
 
-.myexperiences .list{
+.myexperiences .list,
+.myexperiences .rso,
+.myexperiences .accomplishments {
     background-color: rgba(0, 128, 128, 0.35);
     border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 3rem;
 }
 
 .myexperiences .internship,
@@ -43,7 +45,42 @@
     margin-top: 0;
 }
 
-/* Responsive styling */
+.myexperiences table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+.myexperiences td {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    color: #005757;
+    background-color: rgba(0, 128, 128, 0.15);
+    border-radius: 5px;
+    border-bottom: 1px solid #183740;
+}
+
+.myexperiences tr:last-child td{
+    border-bottom: none;
+}
+
+.myexperiences .rso td,
+.myexperiences .accomplishments td {
+    padding: 0.25rem;
+    font-weight: 500;
+}
+
+.myexperiences .rso,
+.myexperiences .accomplishments {
+    background-color: rgba(0, 128, 128, 0.35);
+}
+
+.myexperiences h1.myexperiences-two,
+.myexperiences h1.myexperiences-three {
+    margin-top: 2rem;
+}
+
+
 @media screen and (max-width: 1024px) {
     .myexperiences {
         padding: 1.5rem;
@@ -54,8 +91,13 @@
     }
 
     .myexperiences h3,
-    .myexperiences p {
+    .myexperiences p,
+    .myexperiences td {
         font-size: 1.15rem;
+    }
+
+    .myexperiences td {
+        padding: 0.75rem;
     }
 }
 
@@ -65,7 +107,8 @@
     }
 
     .myexperiences h3,
-    .myexperiences p {
+    .myexperiences p,
+    .myexperiences td {
         font-size: 1rem;
     }
 }
@@ -76,7 +119,8 @@
     }
 
     .myexperiences h3,
-    .myexperiences p {
+    .myexperiences p,
+    .myexperiences td {
         font-size: 0.9rem;
     }
 }

@@ -4,7 +4,7 @@ import './myexperiences.css'
 const myexperiences = () => {
   return (
     <div className='myexperiences' id='myexperiences'>
-        <h1>My Experiences</h1>
+        <h1 className='myexperiences-one'>My Experiences</h1>
         <div className="list">
             <div className="internship">
                 <h1>Internship: Application Developer Intern</h1>
@@ -38,6 +38,35 @@ const myexperiences = () => {
                 a PostgreSQL database.
                 </p>
             </div>
+        </div>
+        <h1 className='myexperiences-two'>On-Campus Experiences</h1>
+        <div className="rso">
+          <table>
+            <tbody>
+              <tr>
+                <td>Nepalese Student Association, President</td>
+              </tr>
+              <tr>
+                <td>International Student Association, Public Relation Officer</td>
+              </tr>
+              <tr>
+                <td>Google Developer Student Club, Member</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h1 className='myexperiences-three'>Accomplishments</h1>
+        <div className="accomplishments">
+        <table>
+            <tbody>
+              <tr>
+                <td>Third Place in the Entrepreneurship Pelican Cup 2023 </td>
+              </tr>
+              <tr>
+                <td>Second Place in the ULM Student Research Symposium 2021 </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
     </div>
   )
