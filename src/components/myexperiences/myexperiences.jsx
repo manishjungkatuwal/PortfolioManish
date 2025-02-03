@@ -38,6 +38,12 @@ const myexperiences = () => {
                 a PostgreSQL database.
                 </p>
             </div>
+            <div className="project">
+                <h1>Project: Appie - Personal Assistant AI </h1>
+                <p>
+                I developed a privacy-first personal assistant app using Flutter and integrated OpenAI API, focusing on a multi-stage anonymization pipeline and 100% on-device data storage. I implemented robust encryption using 256-bit AES  across multiple data domains, including notes, conversations, and reminders, ensuring all sensitive user interactions remain secure. In addition, I architected a modular data management system that securely logs and retrieves user interactions in real time, laying the foundation for personalized, long-term behavioral guidance and advanced privacy-preserving features.
+                </p>
+            </div>
         </div>
         <h1 className='myexperiences-two'>On-Campus Experiences</h1>
         <div className="rso">
