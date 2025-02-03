@@ -74,47 +74,64 @@ const aboutme = () => {
                         <td className='skills-points'>Python</td>
                         <td className='skills-points'>JavaScript</td>
                         <td className='skills-points'>TypeScript</td>
-                        <td className='skills-points'>C++</td>
+                        <td className='skills-points'>C#</td>
                     </tr>
-                    
+
                     <tr>
-                        <td className='skills-topics'>Web-development Tools:</td>
+                        <td className='skills-topics'>Frontend Development:</td>
                         <td className='skills-points'>React</td>
+                        <td className='skills-points'>Next.js</td>
                         <td className='skills-points'>Angular</td>
-                        <td className='skills-points'>Django</td>
+                        <td className='skills-points'>Tailwind CSS</td>
                         <td className='skills-points'>CSS</td>
-                        <td className='skills-points'>Figma</td>
                     </tr>
-                    
+
                     <tr>
-                        <td className='skills-topics'>Cloud Technologies:</td>
-                        <td className='skills-points'>AWS</td>
-                        <td className='skills-points'>Azure</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td className='skills-topics'>Backend Development:</td>
+                        <td className='skills-points'>Node.js</td>
+                        <td className='skills-points'>Express</td>
+                        <td className='skills-points'>Django</td>
+                        <td className='skills-points'>GraphQL</td>
+                        <td className='skills-points'>Sanity</td>
                     </tr>
-                    
+
                     <tr>
-                        <td className='skills-topics'>Database Management systems:</td>
+                        <td className='skills-topics'>Database Management:</td>
                         <td className='skills-points'>MySQL</td>
                         <td className='skills-points'>PostgreSQL</td>
+                        <td className='skills-points'>MongoDB</td>
+                        <td className='skills-points'>Azure PostgreSQL</td>
+                        <td className='skills-points'>Cosmos DB</td>
+                    </tr>
+
+                    <tr>
+                        <td className='skills-topics'>Cloud & DevOps:</td>
+                        <td className='skills-points'>AWS</td>
+                        <td className='skills-points'>Azure</td>
+                        <td className='skills-points'>Azure Blob Storage</td>
+                        <td className='skills-points'>Docker</td>
+                        <td className='skills-points'>CI/CD Pipelines</td>
+                    </tr>
+
+                    <tr>
+                        <td className='skills-topics'>Testing & Automation:</td>
+                        <td className='skills-points'>Jest</td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
-                    
+
                     <tr>
-                        <td className='skills-topics'>Project Managemement Tools:</td>
+                        <td className='skills-topics'>Project Management & Tools:</td>
                         <td className='skills-points'>Jira</td>
-                        <td className='skills-points'>Github</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td className='skills-points'>GitHub</td>
+                        <td className='skills-points'>Figma</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
         <h1>My Certificates</h1>
         <div className="certification">
             <div className="certification-slide" 
